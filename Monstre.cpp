@@ -18,7 +18,7 @@ void Monstre::afficheMonstre(){
     std::cout << "Nom du monstre :"<< nom << endl;
     if (pointsDeVie <= 0){
         std::cout << name << "est mort au combat" << endl;
-        delete Monstre;
+        delete Monstre
     }
     else{
         std::cout << "Points de vie du monstre :" << pointsDeVie << endl;

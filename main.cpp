@@ -1,4 +1,5 @@
 #include "Monstre.cpp"
+#include "Mage.cpp"
 #include <iostream>
 #include <string>
 
@@ -8,7 +9,7 @@ using namespace std;
 int main(){
     
     Monstre Pataupe;
-    Monstre Drakularge ("Drakularge",40,20,true);
+    Monstre Drakularge("Drakularge",40,20,true);
 
     //affiche les deux monstres crées
     Pataupe.afficheMonstre();

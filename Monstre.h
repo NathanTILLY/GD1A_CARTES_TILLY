@@ -22,7 +22,5 @@ class Monstre{
         void attaqueMonstre(Monstre &cible);
         void recevoirDegats(int nbDegats);
         int getDegats() const;
-         
-
-}
+};
 #endif

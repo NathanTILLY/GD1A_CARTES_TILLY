@@ -2,10 +2,14 @@
 #define MAGE_CPP
 
 #include <string>
-#include "Monstre.h"
+#include "Monstre.cpp"
+#include "Mage.h"
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
+Mage::Mage() {
+  
 
 #endif
