@@ -4,19 +4,24 @@
 #include <string>
 #include <vector>
 
+
+using namespace std;
+
 class Monstre{
 
     private:
         int pointsDeVie;
         int scoreAttaque;
-        std::string nom;
-        bool disponibilite = true;
+        std::string name;
+        bool disponibilite;
     public:
-        
-        void attaquerMonstre();
-        //renvoie le résultat de l'attaque d'un monstre sur l'autre, si il le détruit et si il se fait détruire
+        Monstre();
+        Monstre(std::string nomMonstre, int pdvMonstre, int degatsMonstre, bool disponibiliteMonstre);
         void afficheMonstre();
         // renvoie le contenu de monstre
+        void attaqueMonstre(Monstre &cible);
+        void recevoirDegats(int nbDegats);
+        int getDegats() const;
 
 }
 #endif
