@@ -2,7 +2,6 @@
 #define MONSTRE_CPP
 
 #include <string>
-#include <vector>
 #include "Monstre.h"
 #include <iostream>
 
@@ -18,7 +17,8 @@ Monstre::Monstre(std::string nomMonstre, int pdvMonstre, int degatsMonstre, bool
 void Monstre::afficheMonstre(){
     std::cout << "Nom du monstre :"<< nom << endl;
     if (pointsDeVie <= 0){
-        std::cout << name << "est actuellement mort" << endl;
+        std::cout << name << "est mort au combat" << endl;
+        delete Monstre;
     }
     else{
         std::cout << "Points de vie du monstre :" << pointsDeVie << endl;

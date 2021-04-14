@@ -2,7 +2,7 @@
 #define MONSTRE_H
 
 #include <string>
-#include <vector>
+#include <iostream>
 
 
 using namespace std;
@@ -22,6 +22,7 @@ class Monstre{
         void attaqueMonstre(Monstre &cible);
         void recevoirDegats(int nbDegats);
         int getDegats() const;
+         
 
 }
 #endif

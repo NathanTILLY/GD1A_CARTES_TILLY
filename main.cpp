@@ -19,6 +19,7 @@ int main(){
 
     //La pataupe est morte normalement
     Pataupe.afficheMonstre();
+
     Drakularge.afficheMonstre();
 
     return 0;
